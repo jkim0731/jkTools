@@ -620,6 +620,7 @@ function [imageData, alpha] = export_fig(varargin) %#ok<*STRCL1>
                 if hasTransparency || hasPatches
                     % This is *MUCH* slower, but more accurate for patches and transparent annotations (issue #39)
                     renderer = '-opengl';
+% renderer = '-painters'; % 2019/09/12 JK for testing
                 else
                     renderer = '-painters';
                 end
