@@ -172,7 +172,7 @@ end
 [x,y,err,linespec] = deal(cell(0));
 while ~isempty(varargin)
     if length(varargin) < 3
-        error('Unexpected input: should be x, y, bounds triplets');
+        error('Unexpected input: should be x, y, bounds triplets 1');
     end
     if all(cellfun(@isnumeric, varargin(1:3)))
         x = [x varargin(1)];
@@ -180,7 +180,7 @@ while ~isempty(varargin)
         err = [err varargin(3)];
         varargin(1:3) = [];
     else
-        error('Unexpected input: should be x, y, bounds triplets');
+        error('Unexpected input: should be x, y, bounds triplets 2');
     end
     if ~isempty(varargin) && ischar(varargin{1})
         linespec = [linespec varargin(1)];
