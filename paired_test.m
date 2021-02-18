@@ -13,7 +13,7 @@ if nargin == 1
             tempx = x(:,i);
             tempx = tempx(isfinite(tempx));
             if lillietest(tempx)
-                m{i} = 'kw';
+                m{i} = 'Wilcoxon';
                 [p(i), h(i)] = signrank(tempx);
             else
                 m{i} = 'ttest';
@@ -23,7 +23,7 @@ if nargin == 1
     else
         tempx = x(isfinite(x));
         if lillietest(tempx)
-            m = 'kw';
+            m = 'Wilcoxon';
             [p,h] = signrank(tempx);
         else
             m = 'ttest';
@@ -47,7 +47,7 @@ else
                     tempx = tempx(tempInd);
                     tempy = tempy(tempInd);
                     if lillietest(tempx) || lillietest(tempy)
-                        m{i} = 'kw';
+                        m{i} = 'Wilcoxon';
                         [p(i), h(i)] = signrank(tempx,tempy);
                     else
                         m{i} = 'ttest';
@@ -65,7 +65,7 @@ else
                 tempx = tempx(tempInd);
                 tempy = y(tempInd);
                 if lillietest(tempx) || lillietest(tempy)
-                    m{i} = 'ks';
+                    m{i} = 'Wilcoxon';
                     [p(i), h(i)] = signrank(tempx,tempy);
                 else
                     m{i} = 'ttest';
@@ -84,7 +84,7 @@ else
                 tempy = tempy(tempInd);
                 tempx = x(tempInd);
                 if lillietest(tempx) || lillietest(tempy)
-                    m{i} = 'ks';
+                    m{i} = 'Wilcoxon';
                     [p(i), h(i)] = signrank(tempx,tempy);
                 else
                     m{i} = 'ttest';
@@ -96,7 +96,7 @@ else
             tempx = x(tempInd);
             tempy = y(tempInd);
             if lillietest(tempx) || lillietest(tempy)
-                m = 'ks';
+                m = 'Wilcoxon';
                 [p, h] = signrank(tempx,tempy);
             else
                 m = 'ttest';

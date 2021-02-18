@@ -1,0 +1,14 @@
+ObjectType = Image
+NDims = 4
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = False
+TransformMatrix = -0.98291    0.071442     0.17017           0    0.080454     0.99521    0.054166           0    -0.16553    0.067125    -0.98393           0           0           0           0           1
+CenterOfRotation = 0  0  0  0
+AnatomicalOrientation = RAI
+Offset = 83.8946     -61.3085      57.9296            0
+ElementSpacing = 0.91619      1.3606      1.5066         1.5
+DimSize = 99   66  100    5
+ElementNumberOfChannels = 1
+ElementType = MET_DOUBLE
+ElementDataFile = BMode_ultrasound_4D.raw

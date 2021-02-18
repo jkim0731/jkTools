@@ -1,0 +1,14 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = False
+TransformMatrix = -0.982914 0.0714422 0.170168 0.0804545 0.995208 0.0541664 -0.165527 0.0671249 -0.983927
+Offset = 83.8946 -61.3085 57.9296
+CenterOfRotation = 0 0 0
+AnatomicalOrientation = LAS
+ElementSpacing = 0.610793 0.907086 1.00443
+ITK_InputFilterName = MetaImageIO
+DimSize = 149 100 150
+ElementType = MET_USHORT
+ElementDataFile = BMode_ultrasound_3D.raw
